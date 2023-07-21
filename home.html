@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HOME Page</title>
-    </head>
-    <body></body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#canvas{
+			border: 6px solid yellow;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<canvas width="500" height="750" id="canvas">
+
+	</canvas>
+	<script type="text/javascript">
+		let canvas= document.getElementById('canvas')
+		let c= canvas.getContext('2d');
+		c.fillStyle = "green";
+		c.fillRect(50,50,300,600);
+	</script>
+
+</body>
 </html>
